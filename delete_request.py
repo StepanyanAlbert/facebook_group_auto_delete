@@ -11,10 +11,10 @@ driver = webdriver.Firefox()
 driver.get("https://www.facebook.com")
 email=driver.find_element_by_name('email')
 email.clear()
-email.send_keys("savchienko78@inbox.ru")
+email.send_keys("") # email here
 passw=driver.find_element_by_name("pass")
 passw.clear()
-passw.send_keys("antarakuys1990")
+passw.send_keys("") # password here
 try :
     driver.find_element_by_name("login").click()
 except  Exception:
